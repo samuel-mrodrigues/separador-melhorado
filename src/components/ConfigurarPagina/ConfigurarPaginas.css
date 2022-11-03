@@ -1,0 +1,34 @@
+.flutuante {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.paginas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pagina {
+    border: 3px solid rgb(208, 196, 39);
+    box-shadow: 5px 4px 0px 3px rgb(208, 196, 39);
+    padding: 5px 4px 0px 3px;
+    margin: 10px 8px 0px 6px;
+    font-size: 0.9rem;
+    width: 300px;
+}
+
+.pagina .acoes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pagina .acoes button.excluir:hover {
+    background-color: red;
+}
+
+.pagina .acoes button.editar:hover {
+    background-color: rgb(44, 174, 191);
+}

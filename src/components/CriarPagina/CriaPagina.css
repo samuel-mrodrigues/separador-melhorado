@@ -1,0 +1,51 @@
+.criar-pagina {
+    background-color: rgb(69, 67, 62);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.criar-pagina .acoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.criar-pagina .acoes button:not(:disabled).salvar:hover {
+    background-color: rgb(39, 151, 39);
+}
+
+.criar-pagina .acoes button.fechar:hover {
+    background-color: rgb(174, 15, 15);
+}
+
+.palavras .acoes button:not(:disabled).adicionar:hover {
+    background-color: rgb(61, 187, 27);
+}
+
+.palavras .palavra .acoes {
+    display: inline-block;
+}
+
+.palavras .palavra .acoes button:not(:disabled).remover:hover {
+    background-color: rgb(212, 22, 22);
+}
+
+.paginas {
+    margin-bottom: 10px;
+}
+
+.campo p {
+    display: inline-block;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.campo input {
+    display: inline-block;
+    width: auto;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-bottom: 5px solid rgb(208, 196, 39);
+}

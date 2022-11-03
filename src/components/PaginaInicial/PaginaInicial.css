@@ -1,0 +1,19 @@
+.pagina-inicial {}
+
+.seleciona-pdf {}
+
+.seleciona-pdf .acoes {
+    display: flex;
+    justify-content: center;
+}
+
+
+.seleciona-pdf .acoes button:first-child {
+    margin-right: 15px;
+}
+
+.seleciona-salvar input {
+    margin-bottom: 5px;
+    width: 70%;
+    text-align: center;
+}

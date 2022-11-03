@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <NotificacaoAvisos :prop_notificacao="notificacao" />
+    <PaginaInicial v-on:emite-notificacao="mostraNotificacao" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+/* eslint-disable */
+import PaginaInicial from "./components/PaginaInicial/PaginaInicial.vue";
+import NotificacaoAvisos from "./components/Notificacao/NotificacaoAvisos.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    PaginaInicial,
+    NotificacaoAvisos,
+  },
+  data() {
+    return {
+      notificacao: {
+        mensagem: [""],
+        tempo_mostrar: 0,
+      },
+    };
+  },
+  methods: {
+    mostraNotificacao(msg = [], tempo_visivel = 0) {
+      this.notificacao.mensagem = msg;
+      this.notificacao.tempo_mostrar = tempo_visivel;
+    },
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "./App.css";
 </style>
