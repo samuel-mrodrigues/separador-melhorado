@@ -1,24 +1,5 @@
-# separador-melhorado
+Um programa feito em Electron para analisar PDF's em massa, e separar apenas paginas especificas configuradas.
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Para rodar ele:
+Instalar os pacotes: npm i
+Rodar em modo de testes: npm run electron:serve
