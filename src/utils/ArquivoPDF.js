@@ -49,7 +49,7 @@ export default class ArquivoPdf {
         let conteudo_arquivo = await ipcRenderer.invoke("ler-pdf", this.caminho_pdf)
         if (!conteudo_arquivo.sucesso) {
             console.log(`Erro ao efetuar leitura do PDF: ${this.caminho_pdf}`);
-            return
+            return status;
         }
 
         let paginas = []

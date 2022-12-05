@@ -44,7 +44,7 @@ ipcMain.handle("ler-pdf", async (evento, arquivo_caminho) => {
     }
 
     if (!fs.existsSync(arquivo_caminho)) resolve(status)
-
+    
     new PdfReader().parseBuffer(fs.readFileSync(arquivo_caminho), (erro, item) => {
       if (erro) {
         resolve(status)
@@ -60,6 +60,7 @@ ipcMain.handle("ler-pdf", async (evento, arquivo_caminho) => {
 
       conteudo_arquivo.push(item)
     })
+
   })
 })
 
